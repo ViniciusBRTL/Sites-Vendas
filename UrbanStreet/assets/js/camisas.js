@@ -1,4 +1,4 @@
-var camisas = [
+var camisetas = [
     {   
         nome: "nome da camisa",
         preco: "",
