@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
-
+body{
+    overflow-x: hidden;
+}
 * {
     margin: 0;
     padding: 0;
@@ -152,13 +154,22 @@ section{
 .card-inner{
     display: flex;
 }
-.card-item{
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100%/4);
+.carousel-prod{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 1rem;
+ 
+}
+.itens-prod{
+    display: flex;
+    flex-direction: row !important;
+    gap: 1rem;
+    transition: all .5s;
 }
 
-
+.car-btn{
+    position: absolute;
+}
 @media screen and (max-width: 640px) {
     .search{
         display: none;
