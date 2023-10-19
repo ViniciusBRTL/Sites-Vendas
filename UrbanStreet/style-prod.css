@@ -78,6 +78,10 @@
     max-width: 90%;
     height: 90%;
     object-fit: contain;
+    transition: all .5s;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .preco{
     text-align: center;
