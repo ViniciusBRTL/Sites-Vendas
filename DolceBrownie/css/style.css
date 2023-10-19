@@ -6,7 +6,12 @@
     margin: 0;
     padding: 0;
 }
-
+p {
+    margin-bottom: 0 !important;
+}
+body{
+    background-color: #FFF3E1;
+}
 header{
     background-image: url("../img/zyro-image.png");
     background-size: cover;
@@ -25,13 +30,20 @@ header{
     background-image: linear-gradient(black, rgba(0, 0, 0, 0));
 }
 .logo{
-    width: 250px;
+    width: 220px;
+}
+.ornament{
+    background-image: url('../img/ornament.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
 }
 .links{
-    width: 75% !important;
+    width: 50% !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: space-around !important;
+    justify-content: space-around;
 }
 .assine{
     font-family: 'Inter';
@@ -75,90 +87,16 @@ section{
     margin-right: 25px;
     justify-content: space-around;
 }
-.cards-wrapper{
-    display: flex;
-
-}
-.card{
-    width: 18rem;
-    height: 429px;
-    border-radius: 0;
-    border: none;
-    box-shadow: 0 0px 12px rgba(114, 114, 114, 0.568);
-    transition: all 0.5s;
-}
-.card:hover{
-    cursor: pointer;
-    scale: 1.05;
-}
-.image-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 17em;
-}
-.card-img-top{
-    max-width: 90%;
-    height: 90%;
-    object-fit: contain;
-}
-.preco{
-    position: relative;
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 .ro{
     border-radius: 50%;
     width: 50px;
     height: 50px;
     background-color: gray;
 }
-.marca{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    box-shadow: 0 0px 12px rgba(114, 114, 114, 0.692);
-}
-.marcas-wrapper{
-    margin-right: 25px;
-}
-.logo-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 10em;
-}
-.logo-marca{
-    max-width: 80%;
-    height: 80%;
-    object-fit: contain;
-}
-.receita{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: calc(100vw/4);
-    box-shadow: 0 0px 12px rgba(114, 114, 114, 0.692);
-    transition: all 0.5s;
-}
-.receita:hover{
-    cursor: pointer;
-    scale: 1.01;
-}
 .gradient-i{
     background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.801));
     display: flex;
     align-items: end;
-}
-.receita-title{
-    font-family: 'Inter';
-    font-weight: bold;
-    font-size: 2.15em;
-    color: white;
 }
 .p-content{
     margin-top: 50px;
@@ -167,57 +105,7 @@ section{
     width: 94% !important;
     margin-bottom: 4%;
 }
-.cesta-info{
-    margin-right: calc(-25px + -15px);
-    padding: 5%;
-    background-color: white;
-    box-shadow: 0 0px 12px rgba(114, 114, 114, 0.692);
-}
-.bnt-assine-cesta{
-    margin-top: 20px;
-    background-color: #EB8A30;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 12px #EB8A30;
-    font-size: large;
-    font-family: 'Inria Sans';
-    width: 30%;
-    height: 3rem;
-    transition: all 0.5s;
-}
-.bnt-assine-cesta:hover{
-    scale: 1.1;
-}
-.mes{
-    margin-left: 1%;
-    color: #808080;
-    font-weight: bold;
-    font-style: italic;
-    font-size: large;
-    font-family: 'Inter';
-}
-.cesta-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-.img-cesta{ 
-    max-width: 80%;
-    height: 80%;
-    object-fit: contain;
-}
-.cesta-fundo{
-    width: 50%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0px 12px rgba(114, 114, 114, 0.692);
-}
 p{
-    height: 100px;
     color: gray;
 }
 .cesta-cont{
@@ -266,4 +154,62 @@ footer{
 }
 .txt-cesta-info{
     font-size: 0.9em;
+}
+.ro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(178, 178, 178);
+}
+body{
+    overflow-x: hidden;
+}
+.oferta{
+    width: 90% !important;
+    display: flex;
+    flex-direction: row;
+}
+.preco-ant{
+    font-family: 'Inter';
+    font-weight: bold;
+    text-decoration: line-through red !important;
+    float: left;
+}
+.cards-wrapper{
+    display: flex;
+}
+.card{
+    margin: 0.5em;
+    border: none !important;
+    background-color: transparent !important;
+}
+.card-img-top{
+    border-radius: 20px;
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title{
+    text-align: center;
+    font-weight: lighter;
+
+}
+.card-body *{
+    font-family: 'Inter';
+}
+.card-txt{
+    font-size: 1.5em;
+    color: black !important;
+    font-weight: bold;
+}
+.card-parcela{
+    text-align: center;
+    font-weight: lighter;
 }
