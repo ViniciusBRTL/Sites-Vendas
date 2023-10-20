@@ -25,7 +25,17 @@ nav{
 }
 main{
     width: 100%;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    gap: 2rem;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Berlin';
+    color: #86DF6A !important;
 }
 .logo-ff{
     margin-top: -.3rem;
@@ -73,11 +83,6 @@ main{
 }
 .btn-guia:hover{
     transform: scale(1.05);
-}
-.title{
-    font-size: 1.7rem;
-    font-family: 'Inter';
-    font-weight: 400;
 }
 section{
     margin-top: 30px;
@@ -134,7 +139,7 @@ section{
 }
 .logo{
     padding-top: .2rem;
-    width: 6rem;
+    width: 5rem;
 }
 .left{
     display: flex;
@@ -184,22 +189,74 @@ section{
     display: flex;
 }
 .carousel-inner{
-
-}
-.slide{
+    outline: 3px solid #5579DA;
     border-radius: 20px;
+}
+.carousel{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    align-items: center;
+}
+#carouselExampleControls{
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+.carousel a{
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(192, 192, 192);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: 13rem;
+}
+.carousel-control-prev{
+    margin-left: -1.5rem;    
+}
+.carousel-control-next{
+    margin-right: -1.5rem;    
+}
+.carousel-control-prev-icon {
+    margin-left: -0.2rem;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    transform: rotate(180deg);
+    margin-left: .37rem;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+#promocoes{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 .carousel-prod{
     width: 100%;
     overflow-x: hidden;
     padding: 1rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .itens-prod{
+    justify-content: center;
     display: flex;
     flex-direction: row !important;
     gap: 1rem;
     transition: all .5s;
+    overflow-x: hidden;
+}
+.item-prod{
+    background-size: cover;
+    background-position: center;
+    width: calc((100vw / 2.5));
+    height: calc((100vw / 2.5));;
 }
 .carbtn{
     border: none;
@@ -212,8 +269,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-50%);
-    margin-top: 10rem;
     z-index: 100;
     position: absolute;
 }
