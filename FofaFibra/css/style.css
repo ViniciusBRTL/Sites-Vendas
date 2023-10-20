@@ -87,30 +87,6 @@ main{
 section{
     margin-top: 30px;
 }
-.cards-wrapper{
-    display: flex;
-}
-.card{
-    border-radius: 0 !important;
-    width: 18rem;
-    height: 429px;
-    transition: all 0.5s;
-}
-.card:hover{
-    box-shadow: 0 0px 12px rgba(114, 114, 114, 0.568);
-}
-.image-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 17em;
-}
-.card-img-top{
-    max-width: 90%;
-    height: 90%;
-    object-fit: contain;
-}
 .preco{
     text-align: center;
     font-size: 1.5em;
@@ -189,7 +165,6 @@ section{
     display: flex;
 }
 .carousel-inner{
-    outline: 3px solid #5579DA;
     border-radius: 20px;
 }
 .carousel{
@@ -255,8 +230,8 @@ section{
 .item-prod{
     background-size: cover;
     background-position: center;
-    width: calc((100vw / 2.5));
-    height: calc((100vw / 2.5));;
+    width: calc((100vw / 3.5));
+    height: calc((100vw / 3.5));;
 }
 .carbtn{
     border: none;
@@ -330,7 +305,39 @@ footer a:hover{
     color: #c1c1c1;
     cursor: pointer;
 }
+.cards-wrapper{
+    display: flex;
+}
+.card{
+    margin: 0.5em;
+    border: none !important;
+    background-color: transparent !important;
+}
+.card-img-top{
+    border-radius: 20px;
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title{
+    font-weight: lighter;
 
+}
+.card-body *{
+    font-family: 'Berlin';
+}
+.card-txt{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.card-parcela{
+    text-align: center;
+    font-weight: lighter;
+}
 @media screen and (max-width: 640px) {
     .search{
         display: none;
