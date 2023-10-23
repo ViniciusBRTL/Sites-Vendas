@@ -3,6 +3,10 @@
     font-family: 'Berlin';
     src: url(../Berlinsans\ Demi\ Regular.otf);
 }
+@font-face {
+    font-family: 'Berlin L';
+    src: url(../berlin-sans-fb-3.ttf);
+}
 body{
     overflow-x: hidden;
 }
@@ -20,7 +24,7 @@ nav{
     background-size: cover;
     background-position: center;
     width: 100%;
-    z-index: 100;
+    z-index: 99999;
     box-shadow: 0 1px 10px #dadada;
 }
 main{
@@ -258,23 +262,91 @@ section{
 }
 
 footer{
-    margin-top: 7rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 1rem;
     background-color: #86DF6A;
 }
 .main-footer{
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: space-around;
+    width: 90%;
     gap: 1rem;
 }
 .main-footer div.logo-footer{
     display: flex;
     justify-content: center;
+}
+
+div.logo-footer{
+    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-footer .logo{
+    width: 12rem;
+}
+.logo-footer .text{
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0px 4px 4px #ffffff5e;
+}
+.insta{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.insta:hover, .insta *:hover{
+    cursor: pointer;
+}
+.insta div{
+    font-family: 'Berlin L';
+}
+.instabox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instabox .icon{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 4.7rem;
+    color: #86DF6A;
+    z-index: 100;
+    box-shadow: 1px 0px 1px #00000022;
+}
+.instabox .section{
+    margin-left: -3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0rem 2rem 0rem 4rem;
+    border-radius: 20px;
+}
+.instabox .section *{
+    margin: 0;
+    font-weight: lighter;
+}
+.instabox .section p{
+    white-space: nowrap;
+    font-family: 'Berlin L';
+    font-size: 1.3rem;
+    color: #86DF6A;
+}
+.instabox .section h2{
+    color: #FFD600;
 }
 .cats{
     text-align: center;
@@ -339,11 +411,54 @@ footer a:hover{
     text-align: center;
     font-weight: lighter;
 }
+.address{
+    font-family: 'Berlin L';
+    color: #fff;
+    width: 80%;
+    text-align: left;
+}
+
+.carouselProd{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 1rem;
+    display: flex;
+}
+.itensProd{
+    display: flex;
+    flex-direction: row !important;
+    gap: 1rem;
+    transition: all .5s;
+}
+.carbtnP{
+    border: none;
+    border-radius: 50%;
+    font-size: 2.3em;
+    color: #fff;
+    background-color: #aeaeae65;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    margin-top: 10rem;
+    z-index: 100;
+    position: absolute;
+}
+
+
 @media screen and (max-width: 640px) {
     .search{
         display: none;
     }
     .guias{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-footer{
+        gap: 0rem;
         flex-direction: column;
     }
 }
