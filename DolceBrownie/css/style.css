@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Inter:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
+.container-fluid{
+    position: relative !important;
+    z-index: 1 !important;
+}
 p {
     margin-bottom: 0 !important;
 }
 body{
+    overflow-x: hidden;
     background-color: #FFF3E1;
 }
 header{
@@ -30,14 +36,11 @@ header{
     background-image: linear-gradient(black, rgba(0, 0, 0, 0));
 }
 .logo{
-    width: 220px;
+    width: 150px;
 }
 .ornament{
-    background-image: url('../img/ornament.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: auto;
+    display: flex;
+    justify-content: center;
 }
 .links{
     width: 50% !important;
@@ -72,15 +75,17 @@ main{
     background-position: center;
 }
 .txt-sobre{
-    width: 70%;
+    width: 55% !important;
+    font-size: 1.15em !important;
 }
-h2{
-    font-family: 'Inter';
+.title{
+    font-size: 3.4em;
+    font-family: 'Just Another Hand';
     font-weight: bold;
-    color: #573531;
+    color: #77411A;
 }
 section{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .content{
     margin-left: 25px;
@@ -116,7 +121,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
     background-image: url('../img/footerbkgrnd-2.png');
     background-size: contain;
 }
@@ -179,7 +184,9 @@ body{
     float: left;
 }
 .cards-wrapper{
-    display: flex;
+    display: grid !important;
+    grid-template-columns: auto auto auto !important;
+    flex-wrap: wrap;
 }
 .card{
     margin: 0.5em;
@@ -190,6 +197,7 @@ body{
     border-radius: 20px;
     border-top-right-radius: 20px !important;
     border-top-left-radius: 20px !important;
+    height: 150px !important;
 }
 .card-body{
     display: flex;
@@ -212,4 +220,29 @@ body{
 .card-parcela{
     text-align: center;
     font-weight: lighter;
+}
+.fnd{
+    width: 100%;
+    margin-top: 250px;
+    position: absolute;
+    z-index: 0;
+}
+.fnd-or{
+    width: 97%;
+    position: absolute;
+    z-index: 0;
+}
+.logo-sobre{
+    width: 220px;
+}
+.sp{
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+#chocolates .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
