@@ -231,7 +231,7 @@ section{
     transition: all .5s;
     overflow-x: hidden;
 }
-.item-prod{
+.item-prod.t{
     background-size: cover;
     background-position: center;
     width: calc((100vw / 3.5));

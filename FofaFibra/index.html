@@ -77,10 +77,10 @@
 
         <div class="itens-prod">
 
-          <div style="background-image: url(img/promo/ff.png);" class="item-prod"></div>
-          <div style="background-image: url(img/promo/ff2.png);" class="item-prod"></div>
-          <div style="background-image: url(img/promo/ff3.png);" class="item-prod"></div>
-          <div style="background-image: url(img/promo/ff4.png);" class="item-prod"></div>
+          <div style="background-image: url(img/promo/ff.png);" class="item-prod t"></div>
+          <div style="background-image: url(img/promo/ff2.png);" class="item-prod t"></div>
+          <div style="background-image: url(img/promo/ff3.png);" class="item-prod t"></div>
+          <div style="background-image: url(img/promo/ff4.png);" class="item-prod t"></div>
 
         </div>
 
@@ -231,7 +231,8 @@
 <script src="../UrbanStreet/assets/js/main.js"></script>
 <script>
   
-  var prods = $('.itens-prod')
+  var promos = $('.itens-prod')
+  var prods = $('.itensProd')
   var count = 0
   var go = 0
   var insta = $(".insta .instabox")
@@ -240,17 +241,17 @@
     window.open('https://www.instagram.com/fofafibra/', '_blank')
   })
 
-  var produtos = document.querySelectorAll('.item-prod')
+  var produtos = document.querySelectorAll('.item-prod.t')
 
   $('.carbtn.next').click(() => {
     if (count == produtos.length / 4) {
       count = 0
       go = count * -  parseFloat($('.item-prod').css('width'))
-      prods.css('margin-left', go + 'px')
+      promos.css('margin-left', go + 'px')
     } else {
       count++
       go = count * - (parseFloat($('.item-prod').css('width'))*0.5)  
-      prods.css('margin-left', `calc(${go}px - 6rem)`)
+      promos.css('margin-left', `calc(${go}px - 6rem)`)
     }
   })
 
@@ -258,15 +259,39 @@
     if(count != -1){
       count--
       go = count * - (parseFloat($('.item-prod').css('width'))*0.5)  
-      prods.css('margin-left', `calc(${go}px + 6rem)`)
+      promos.css('margin-left', `calc(${go}px + 6rem)`)
     }else{
       count = 0
       go = count * -  parseFloat($('.item-prod').css('width'))
-      prods.css('margin-left', go + 'px')
+      promos.css('margin-left', go + 'px')
     }
         
-
   })
+
+  var bicho = document.querySelectorAll('.item-prod')
+
+$('.carbtnP.next').click(() => {
+  if (count == bicho.length / 2) {
+    count = 0
+    go = count * -19
+    prods.css('margin-left', go + 'rem')
+  } else {
+    count++
+    go = count * -19
+    prods.css('margin-left', go + 'rem')
+  }
+})
+
+$('.carbtnP.prev').click(() => {
+  if (count == 0) {
+    count = 0
+  } else {
+    count--
+    go = count * -19
+    prods.css('margin-left', go + 'rem')
+  }
+
+})
 </script>
 
 </html>
