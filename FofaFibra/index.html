@@ -98,9 +98,9 @@
           <div class="item-prod">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
-                  src="img/1.png" alt="..."></div>
+                  src="img/prods/bichin.jpg" alt="..."></div>
               <div class="card-body d-flex justify-content-cente align-items-center flex-column">
-                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <h5 class="card-title">Bichin</h5>
                 <span class="preco">R$ 89,90</span>
                 <span class="parcela">Em até 4x de R$19,60 sem juros</span>
               </div>
@@ -110,9 +110,9 @@
           <div class="item-prod">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
-                  src="img/1.png" alt="..."></div>
+                  src="img/prods/bichin.jpg" alt="..."></div>
               <div class="card-body d-flex justify-content-cente align-items-center flex-column">
-                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <h5 class="card-title">Bichin</h5>
                 <span class="preco">R$ 89,90</span>
                 <span class="parcela">Em até 4x de R$19,60 sem juros</span>
               </div>
@@ -122,9 +122,9 @@
           <div class="item-prod">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
-                  src="img/1.png" alt="..."></div>
+                  src="img/prods/bichin.jpg" alt="..."></div>
               <div class="card-body d-flex justify-content-cente align-items-center flex-column">
-                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <h5 class="card-title">Bichin</h5>
                 <span class="preco">R$ 89,90</span>
                 <span class="parcela">Em até 4x de R$19,60 sem juros</span>
               </div>
@@ -134,9 +134,9 @@
           <div class="item-prod">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
-                  src="img/1.png" alt="..."></div>
+                  src="img/prods/bichin.jpg" alt="..."></div>
               <div class="card-body d-flex justify-content-cente align-items-center flex-column">
-                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <h5 class="card-title">Bichin</h5>
                 <span class="preco">R$ 89,90</span>
                 <span class="parcela">Em até 4x de R$19,60 sem juros</span>
               </div>
@@ -146,9 +146,9 @@
           <div class="item-prod">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
-                  src="img/1.png" alt="..."></div>
+                  src="img/prods/bichin.jpg" alt="..."></div>
               <div class="card-body d-flex justify-content-cente align-items-center flex-column">
-                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <h5 class="card-title">Bichin</h5>
                 <span class="preco">R$ 89,90</span>
                 <span class="parcela">Em até 4x de R$19,60 sem juros</span>
               </div>
@@ -158,9 +158,9 @@
           <div class="item-prod">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
-                  src="img/1.png" alt="..."></div>
+                  src="img/prods/bichin.jpg" alt="..."></div>
               <div class="card-body d-flex justify-content-cente align-items-center flex-column">
-                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <h5 class="card-title">Bichin</h5>
                 <span class="preco">R$ 89,90</span>
                 <span class="parcela">Em até 4x de R$19,60 sem juros</span>
               </div>
@@ -170,9 +170,9 @@
           <div class="item-prod">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
-                  src="img/1.png" alt="..."></div>
+                  src="img/prods/bichin.jpg" alt="..."></div>
               <div class="card-body d-flex justify-content-cente align-items-center flex-column">
-                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <h5 class="card-title">Bichin</h5>
                 <span class="preco">R$ 89,90</span>
                 <span class="parcela">Em até 4x de R$19,60 sem juros</span>
               </div>
@@ -182,9 +182,9 @@
           <div class="item-prod">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
-                  src="img/1.png" alt="..."></div>
+                  src="img/prods/bichin.jpg" alt="..."></div>
               <div class="card-body d-flex justify-content-cente align-items-center flex-column">
-                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <h5 class="card-title">Bichin</h5>
                 <span class="preco">R$ 89,90</span>
                 <span class="parcela">Em até 4x de R$19,60 sem juros</span>
               </div>
@@ -215,7 +215,7 @@
             <p>Pelo nosso instagram</p>
           </div>
         </div>
-        <div>@fofafibra</div>
+        <div style="font-size: 1.6em; margin-left: 3rem;"><a href="https://www.instagram.com/fofafibra/">@fofafibra</a></div>
 
       </div>
 
@@ -245,7 +245,7 @@
 
   $('.carbtn.next').click(() => {
     if (count == produtos.length / 4) {
-      count = 0
+      count = -1
       go = count * -  parseFloat($('.item-prod').css('width'))
       promos.css('margin-left', go + 'px')
     } else {
@@ -261,34 +261,33 @@
       go = count * - (parseFloat($('.item-prod').css('width'))*0.5)  
       promos.css('margin-left', `calc(${go}px + 6rem)`)
     }else{
-      count = 0
+      count = 1
       go = count * -  parseFloat($('.item-prod').css('width'))
       promos.css('margin-left', go + 'px')
     }
-        
   })
 
-  var bicho = document.querySelectorAll('.item-prod')
+  var bicho = document.querySelectorAll('.itensProd .item-prod')
+  var count2 = 0
 
 $('.carbtnP.next').click(() => {
-  if (count == bicho.length / 2) {
-    count = 0
-    go = count * -19
-    prods.css('margin-left', go + 'rem')
+  if (count2 == bicho.length / 2) {
+    count2 = 0
+    prods.css('margin-left', 'calc( ((100vw / 4)) * 4)')
   } else {
-    count++
-    go = count * -19
-    prods.css('margin-left', go + 'rem')
+    count2++
+    go = count2 * -(screen.width/4 *2)
+    prods.css('margin-left', `calc( (((100vw / 4)) * 4) + ${go}px )`)
   }
 })
 
 $('.carbtnP.prev').click(() => {
-  if (count == 0) {
-    count = 0
+  if (count2 == 0) {
+    prods.css('margin-left', 'calc( ((100vw / 4)) * 4)')
   } else {
-    count--
-    go = count * -19
-    prods.css('margin-left', go + 'rem')
+    count2--  
+    go = count2 * (screen.width/4 *2)
+    prods.css('margin-left', `calc( (((100vw / 4)) * 4) - ${go}px )`)
   }
 
 })
